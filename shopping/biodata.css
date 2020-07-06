@@ -1,0 +1,54 @@
+body{
+background-image:url('b2.jpg');
+background-size:cover;
+}
+
+h1{
+color:white;
+padding-left:100px;
+font-size:28px;
+font-family:arial;
+}
+
+h1 span{
+font-weight:normal;
+font-size:28px;
+font-family:arial;
+}
+
+.middle {
+text-align:center;
+color:white;
+padding-top:74px;
+}
+
+.heading h1{
+font-size:48px;
+font-family:verdana;
+font-weight:normal;
+}
+
+.middle p {
+font-size:20px;
+font-family:arial;
+}
+
+ .social a{
+  padding: 0 2px;
+}
+
+.social a span{
+  height: 47px;
+  width: 47px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  
+}
+ .social a span:hover{
+  background: #f12020;
+}
+

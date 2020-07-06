@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login here</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mountains+of+Christmas" />
+<link rel="stylesheet" href="login2.css">
+<script type="text/javascript">
+function checkform(form)//user defined
+{ var n;
+if(form.p1.value =="" && form.p2.value =="") {
+form.p1.focus();
+return false;
+}
+
+return true;
+	
+}
+
+function msg()//user defined
+{var name,pwd1,pwd2,n;
+name=window.prompt("Enter your Email address");
+pwd1=window.prompt("Enter new password");
+pwd2=window.prompt("Re-enter new password");	
+
+if(pwd1 != pwd2 && pw1!= null)
+{
+n=window.alert("Password is incorrect");
+return false;
+}
+n=window.alert("Password successfully changed");
+return true;
+
+}
+</script>
+
+</head>
+<body>
+<div>
+<img  align="right" src="26.jpg" width="60%" height="100%" >
+<div class="loginbox">
+<div class="logo"><a href="shoppingmarket.html"><p><span>shopping</span>market</p></a></div><br><br><br>
+<h1>Login Here</h1>
+<form  action="shoppingmarket.html"  onsubmit="return checkform(this);">
+
+<div><input type="text" name="p1" placeholder="Enter Username" required/><br>
+<input type="password" name="p2" placeholder="Enter Password" required/><br><br>
+
+<input type="submit" name="11" value="sign in"><br>
+<a href="#" onclick="msg()">forget password</a><br><br>
+<a href="signup.html">create an account</a>
+
+</form>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>

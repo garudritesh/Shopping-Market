@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> create new account</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mountains+of+Christmas" />
+<link rel="stylesheet" href="signup.css">
+<script type="text/javascript">
+function checkform(form)//user defined
+{ var n;
+if(form.u1.value =="" && form.u2.value =="" && form.u3.value =="" && form.u4.value =="") {
+form.u1.focus();
+return false;
+}
+
+var re= /^[\w ]+$/; 
+
+if(!re.test(form.u1.value)) {
+n=window.alert("Errors: First name contains invalid characters!");
+form.u1.focus();
+return false;
+}
+
+if(!re.test(form.u4.value)) {
+n=window.alert("Errors: Last name contains invalid characters!");
+form.u4.focus();
+return false;
+}
+
+n=window.alert("You successfully created your account");
+return true;
+	
+}
+</script>
+
+</head>
+<body><div>
+<img  align="right" src="24.jpg" width="60%" height="100%" >
+<div class="loginbox">
+<div class="logo"><a href="#"><p><span>shopping</span>market</p></a></div><br><br>
+<h1>Sign up</h1>
+<form  action="index.html"  onsubmit="return checkform(this);">
+
+<div><input type="text" name="u1" placeholder="First name" required/><br>
+
+<input type="text" name="u4" placeholder="Last name" required/></div>
+<input type="text" name="u2" placeholder="Mobile number or email address" required/><br>
+<input type="password" name="u3" placeholder="Password" required/><br><br>
+
+
+<input type="submit" name="11" value="Create an account">
+
+</form>
+
+
+</div>
+</div>
+</body>
+</html>
